@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { AppBar, Toolbar, Button, ThemeProvider } from "@material-ui/core";
-import Home from "./components/home/Home";
+import Home from "./components/Home";
 import Cypher from "./components/Cypher";
 
 export default function App() {
