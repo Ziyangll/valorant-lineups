@@ -1,7 +1,7 @@
 {
   "name": "valorantlineups",
   "version": "0.1.0",
-  "homepage": "https://ziyangll.github.io/valorant-lineups/",
+  "homepage": "https://valorantlineups.online",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",

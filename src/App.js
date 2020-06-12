@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { AppBar, Toolbar, Button, ThemeProvider } from "@material-ui/core";
+import Home from "./components/home/Home";
+import Cypher from "./components/Cypher";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <ThemeProvider>
+          <AppBar position='static'>
+            <Toolbar>
+              <Button component={Link} to='/' color='inherit'>
+                Home
+              </Button>
+              <Button component={Link} to='/cypher' color='inherit'>
+                Cypher
+              </Button>
+            </Toolbar>
+          </AppBar>
+        </ThemeProvider>
+        {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+        <Switch>
+          <Route path='/cypher'>
+            <Cypher />
+          </Route>
+          <Route path='/'>
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
-
-export default App;
