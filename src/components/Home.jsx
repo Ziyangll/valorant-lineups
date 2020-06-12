@@ -17,7 +17,7 @@ const useStyles = makeStyles({
     backgroundColor: "#222",
   },
   root: {
-    margin: "3rem",
+    margin: "2rem",
   },
 });
 export default function Home() {
