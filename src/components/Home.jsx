@@ -28,10 +28,10 @@ export default function Home() {
         <CardActionArea onClick={() => history.push("/cypher")}>
           <CardMedia
             component='img'
-            color="grey"
+            color='grey'
             alt='cypher'
             height='140'
-            image={process.env.PUBLIC_URL + "/images/Cypher_Spycam.png"}
+            image={process.env.PUBLIC_URL + "/images/Cypher.png"}
             title='cypher'
           />
 
@@ -88,7 +88,6 @@ export default function Home() {
       </Card>
       <Card className={classes.root}>
         <CardActionArea onClick={() => history.push("/viper")}>
-
           <CardMedia
             component='img'
             alt='viper'
