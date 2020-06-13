@@ -4,6 +4,8 @@ import Ascent from "../Maps/Ascent";
 import Bind from "../Maps/Bind";
 import Haven from "../Maps/Haven";
 import Split from "../Maps/Split";
+import ViperAscent from "./Viper/ViperAscent";
+import ViperSplit from "./Viper/ViperSplit";
 const useStyles = makeStyles({
   main: {
     position: "absolute",
@@ -20,9 +22,11 @@ export default function Viper({ map }) {
   return (
     <div className={classes.main}>
       {map === "ascent" && <Ascent />}
+      {map === "ascent" && <ViperAscent />}
       {map === "bind" && <Bind />}
       {map === "haven" && <Haven />}
       {map === "split" && <Split />}
+      {map === "split" && <ViperSplit />}
     </div>
   );
 }
