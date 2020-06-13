@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import Modal from "@material-ui/core/Modal";
+import ButtonModal from "../../ButtonModal";
 const useStyles = makeStyles({
   main: {
     position: "absolute",
@@ -50,106 +49,49 @@ const useStyles = makeStyles({
 
 export default function CypherHaven() {
   const classes = useStyles();
+  const icon = "Cypher_Spycam.png";
   const [open, setOpen] = useState(false);
-
   const [open2, setOpen2] = useState(false);
-
   const [open3, setOpen3] = useState(false);
   const [open4, setOpen4] = useState(false);
-
   return (
     <div className={classes.main}>
-      <Button className={classes.one} onClick={() => setOpen(true)}>
-        <img
-          className={classes.icon}
-          alt='cam icon'
-          src={
-            process.env.PUBLIC_URL + "/images/icons/Cypher_Spycam.png"
-          }></img>
-      </Button>
-      <Modal
+      <ButtonModal
         open={open}
-        onClose={() => setOpen(false)}
-        aria-labelledby='simple-modal-title'
-        aria-describedby='simple-modal-description'>
-        {
-          <div>
-            <img
-              className={classes.image}
-              alt='cam spot'
-              src='https://drive.google.com/uc?export=view&id=1kpUXtZpEsUOuUSDdd_Lqxe9SrGLCjb7a'></img>
-          </div>
+        setOpen={setOpen}
+        style={classes.one}
+        icon={icon}
+        imgID={
+          "https://drive.google.com/uc?export=view&id=1kpUXtZpEsUOuUSDdd_Lqxe9SrGLCjb7a"
         }
-      </Modal>
-
-      <Button className={classes.two} onClick={() => setOpen2(true)}>
-        <img
-          className={classes.icon}
-          alt='cam icon'
-          src={
-            process.env.PUBLIC_URL + "/images/icons/Cypher_Spycam.png"
-          }></img>
-      </Button>
-      <Modal
+      />
+      <ButtonModal
         open={open2}
-        onClose={() => setOpen2(false)}
-        aria-labelledby='simple-modal-title'
-        aria-describedby='simple-modal-description'>
-        {
-          <div>
-            <img
-              className={classes.image}
-              alt='cam spot'
-              src='https://drive.google.com/uc?export=view&id=1ppOa7sC6z19rUfH1iYAt8vqmN-bpOdUT'></img>
-          </div>
+        setOpen={setOpen2}
+        style={classes.two}
+        icon={icon}
+        imgID={
+          "https://drive.google.com/uc?export=view&id=1ppOa7sC6z19rUfH1iYAt8vqmN-bpOdUT"
         }
-      </Modal>
-
-      <Button className={classes.three} onClick={() => setOpen3(true)}>
-        <img
-          className={classes.icon}
-          alt='cam icon'
-          src={
-            process.env.PUBLIC_URL + "/images/icons/Cypher_Spycam.png"
-          }></img>
-      </Button>
-      <Modal
+      />
+      <ButtonModal
         open={open3}
-        onClose={() => setOpen3(false)}
-        aria-labelledby='simple-modal-title'
-        aria-describedby='simple-modal-description'>
-        {
-          <div>
-            <img
-              className={classes.image}
-              alt='cam spot'
-              src='https://drive.google.com/uc?export=view&id=1l3rHhY5V9BpvSsIkNb4FosTh-Gh6kYSd'></img>
-          </div>
+        setOpen={setOpen3}
+        style={classes.three}
+        icon={icon}
+        imgID={
+          "https://drive.google.com/uc?export=view&id=1l3rHhY5V9BpvSsIkNb4FosTh-Gh6kYSd"
         }
-      </Modal>
-
-      <Button className={classes.four} onClick={() => setOpen4(true)}>
-        <img
-          className={classes.icon}
-          alt='cam icon'
-          src={
-            process.env.PUBLIC_URL + "/images/icons/Cypher_Spycam.png"
-          }></img>
-      </Button>
-      <Modal
+      />
+      <ButtonModal
         open={open4}
-        onClose={() => setOpen4(false)}
-        aria-labelledby='simple-modal-title'
-        aria-describedby='simple-modal-description'>
-        {
-          <div>
-            <img
-              className={classes.image}
-              alt='cam spot'
-              src='https://drive.google.com/uc?export=view&id=1t2urXE0jVvSDwOe17LsG9yvF61iNHuqT'></img>
-          </div>
+        setOpen={setOpen4}
+        style={classes.four}
+        icon={icon}
+        imgID={
+          "https://drive.google.com/uc?export=view&id=1t2urXE0jVvSDwOe17LsG9yvF61iNHuqT"
         }
-      </Modal>
+      />
     </div>
   );
 }
