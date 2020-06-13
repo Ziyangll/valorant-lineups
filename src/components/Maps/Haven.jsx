@@ -7,6 +7,8 @@ const useStyles = makeStyles({
     backgroundColor: "#222",
   },
   text: {
+    marginLeft: "50%",
+    marginRight: "50%",
     color: "#fff",
   },
 });
