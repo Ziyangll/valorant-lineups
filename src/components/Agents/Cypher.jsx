@@ -1,5 +1,10 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import Ascent from "../Maps/Ascent";
+import Bind from "../Maps/Bind";
+import Haven from "../Maps/Haven";
+import Split from "../Maps/Split";
+
 const useStyles = makeStyles({
   main: {
     position: "absolute",
@@ -16,8 +21,10 @@ export default function Cypher({ map }) {
   const classes = useStyles();
   return (
     <div className={classes.main}>
-      <h1 className={classes.text}>Cypher</h1>
-      <h1 className={classes.text}>{map}</h1>
+      {map === "ascent" && <Ascent />}
+      {map === "bind" && <Bind />}
+      {map === "haven" && <Haven />}
+      {map === "split" && <Split />}
     </div>
   );
 }
