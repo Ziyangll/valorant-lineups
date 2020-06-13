@@ -27,55 +27,50 @@ const useStyles = makeStyles({
   },
   one: {
     position: "absolute",
-    left: "1010px",
-    top: "600px",
+    left: "1200px",
+    top: "530px",
   },
   two: {
     position: "absolute",
-    left: "750px",
-    top: "660px",
+    left: "1050px",
+    top: "430px",
   },
   three: {
     position: "absolute",
-    left: "230px",
+    left: "350px",
     top: "550px",
   },
 });
 
-export default function CypherBind() {
+export default function SovaAscent() {
   const classes = useStyles();
-  const icon = "Cypher_Spycam.png";
+  const icon = "Sova_Recon_Bolt.png";
   const [open, setOpen] = useState(false);
   const [open2, setOpen2] = useState(false);
   const [open3, setOpen3] = useState(false);
+
   return (
-    <div className={classes.main}>
+    <div>
       <ButtonModal
         open={open}
         setOpen={setOpen}
         style={classes.one}
         icon={icon}
-        imgID={
-          "https://drive.google.com/uc?export=view&id=1orxyNIQWDyMLBeFrshTxLWdgCVtIzm4R"
-        }
+        imgID={"https://drive.google.com/uc?export=view&id="}
       />
       <ButtonModal
         open={open2}
         setOpen={setOpen2}
         style={classes.two}
         icon={icon}
-        imgID={
-          "https://drive.google.com/uc?export=view&id=1SP31w8Y_2UNLuY6yQmhpgPTJAJPkUDHi"
-        }
+        imgID={"https://drive.google.com/uc?export=view&id="}
       />
       <ButtonModal
         open={open3}
         setOpen={setOpen3}
         style={classes.three}
         icon={icon}
-        imgID={
-          "https://drive.google.com/uc?export=view&id=1aUzvpKjRWTcVSt9X5NHQd8Yf_qoQJ2IN"
-        }
+        imgID={"https://drive.google.com/uc?export=view&id="}
       />
     </div>
   );

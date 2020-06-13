@@ -13,7 +13,6 @@ const useStyles = makeStyles({
   main: {
     position: "absolute",
     width: "100%",
-    height: "calc(100% - 64px);",
     backgroundColor: "#222",
   },
   text: {
