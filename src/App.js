@@ -14,6 +14,14 @@ const useStyles = makeStyles({
     margin: "0",
     backgroundColor: "#222",
   },
+  buttons: {
+    backgroundColor: "#1b262c",
+    margin: "2rem 2rem 0rem 2rem",
+    textAlign: "center",
+  },
+  margin: {
+    margin: "1rem 0rem",
+  },
 });
 
 const theme = createMuiTheme({
@@ -53,49 +61,49 @@ export default function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path='/cypher/haven'>
+          <Route exact path='/cypher/haven'>
             <Cypher map='haven' />
           </Route>
-          <Route path='/sova/haven'>
+          <Route exact path='/sova/haven'>
             <Sova map='haven' />
           </Route>
-          <Route path='/viper/haven'>
+          <Route exact path='/viper/haven'>
             <Viper map='haven' />
           </Route>
-          <Route path='/cypher/bind'>
+          <Route exact path='/cypher/bind'>
             <Cypher map='bind' />
           </Route>
-          <Route path='/sova/bind'>
+          <Route exact path='/sova/bind'>
             <Sova map='bind' />
           </Route>
-          <Route path='/viper/bind'>
+          <Route exact path='/viper/bind'>
             <Viper map='bind' />
           </Route>
-          <Route path='/cypher/split'>
+          <Route exact path='/cypher/split'>
             <Cypher map='split' />
           </Route>
-          <Route path='/sova/split'>
+          <Route exact path='/sova/split'>
             <Sova map='split' />
           </Route>
-          <Route path='/viper/split'>
+          <Route exact path='/viper/split'>
             <Viper map='split' />
           </Route>
-          <Route path='/cypher/ascent'>
+          <Route exact path='/cypher/ascent'>
             <Cypher map='ascent' />
           </Route>
-          <Route path='/sova/ascent'>
+          <Route exact path='/sova/ascent'>
             <Sova map='ascent' />
           </Route>
-          <Route path='/viper/ascent'>
+          <Route exact path='/viper/ascent'>
             <Viper map='ascent' />
           </Route>
-          <Route path='/cypher'>
+          <Route exact path='/cypher'>
             <Cypher map='all' />
           </Route>
-          <Route path='/sova'>
+          <Route exact path='/sova'>
             <Sova map='all' />
           </Route>
-          <Route path='/viper'>
+          <Route exact path='/viper'>
             <Viper map='all' />
           </Route>
           <Route path='/'>

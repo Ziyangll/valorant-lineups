@@ -13,7 +13,6 @@ const useStyles = makeStyles({
   main: {
     position: "absolute",
     width: "100%",
-    height: "calc(100% - 64px);",
     backgroundColor: "#222",
   },
   root: {
@@ -28,10 +27,14 @@ export default function Home() {
       <Card className={classes.root}>
         <CardActionArea onClick={() => history.push("/cypher")}>
           <CardMedia
-            className={classes.media}
-            image='/static/images/cards/contemplative-reptile.jpg'
-            title='Contemplative Reptile'
+            component='img'
+            color="grey"
+            alt='cypher'
+            height='140'
+            image={process.env.PUBLIC_URL + "/images/Cypher_Spycam.png"}
+            title='cypher'
           />
+
           <CardContent>
             <Typography gutterBottom variant='h5' component='h2'>
               Cypher
@@ -39,26 +42,28 @@ export default function Home() {
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button component={Link} to='/cypher/haven'>
-            HAVEN
+          <Button component={Link} to='/cypher/ascent'>
+            ASCENT
           </Button>
           <Button component={Link} to='/cypher/bind'>
             BIND
           </Button>
+          <Button component={Link} to='/cypher/haven'>
+            HAVEN
+          </Button>
           <Button component={Link} to='/cypher/split'>
             SPLIT
-          </Button>
-          <Button component={Link} to='/cypher/ascent'>
-            ASCENT
           </Button>
         </CardActions>
       </Card>
       <Card className={classes.root}>
         <CardActionArea onClick={() => history.push("/sova")}>
           <CardMedia
-            className={classes.media}
-            image='/static/images/cards/contemplative-reptile.jpg'
-            title='Contemplative Reptile'
+            component='img'
+            alt='sova'
+            height='140'
+            image={process.env.PUBLIC_URL + "/images/Sova.png"}
+            title='sova'
           />
           <CardContent>
             <Typography gutterBottom variant='h5' component='h2'>
@@ -67,26 +72,29 @@ export default function Home() {
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button component={Link} to='/cypher/haven'>
-            HAVEN
+          <Button component={Link} to='/sova/ascent'>
+            ASCENT
           </Button>
-          <Button component={Link} to='/cypher/bind'>
+          <Button component={Link} to='/sova/bind'>
             BIND
           </Button>
-          <Button component={Link} to='/cypher/split'>
-            SPLIT
+          <Button component={Link} to='/sova/haven'>
+            HAVEN
           </Button>
-          <Button component={Link} to='/cypher/ascent'>
-            ASCENT
+          <Button component={Link} to='/sova/split'>
+            SPLIT
           </Button>
         </CardActions>
       </Card>
       <Card className={classes.root}>
         <CardActionArea onClick={() => history.push("/viper")}>
+
           <CardMedia
-            className={classes.media}
-            image='/static/images/cards/contemplative-reptile.jpg'
-            title='Contemplative Reptile'
+            component='img'
+            alt='viper'
+            height='140'
+            image={process.env.PUBLIC_URL + "/images/Viper.png"}
+            title='viper'
           />
           <CardContent>
             <Typography gutterBottom variant='h5' component='h2'>
@@ -95,17 +103,17 @@ export default function Home() {
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button component={Link} to='/cypher/haven'>
-            HAVEN
+          <Button component={Link} to='/viper/ascent'>
+            ASCENT
           </Button>
-          <Button component={Link} to='/cypher/bind'>
+          <Button component={Link} to='/viper/bind'>
             BIND
           </Button>
-          <Button component={Link} to='/cypher/split'>
-            SPLIT
+          <Button component={Link} to='/viper/haven'>
+            HAVEN
           </Button>
-          <Button component={Link} to='/cypher/ascent'>
-            ASCENT
+          <Button component={Link} to='/viper/split'>
+            SPLIT
           </Button>
         </CardActions>
       </Card>
