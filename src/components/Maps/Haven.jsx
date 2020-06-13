@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles({
   main: {
     position: "absolute",
-    width: "100%",
+    width: "1440px",
     backgroundColor: "#222",
   },
   text: {

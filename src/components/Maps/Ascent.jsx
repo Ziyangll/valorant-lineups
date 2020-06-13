@@ -3,8 +3,8 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles({
   main: {
     position: "absolute",
-    width: "100%",
     backgroundColor: "#222",
+    width: "1440px",
   },
   text: {
     marginLeft: "50%",
