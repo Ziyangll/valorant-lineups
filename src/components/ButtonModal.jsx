@@ -18,12 +18,12 @@ const useStyles = makeStyles({
 
   image: {
     position: "absolute",
-    width: "1600px",
+    width: "80%",
     marginLeft: "auto",
     marginRight: "auto",
     left: "0",
     right: "0",
-    top: "20%",
+    top: "10%",
     textAlign: "center",
   },
 });
