@@ -27,33 +27,33 @@ const useStyles = makeStyles({
   },
   one: {
     position: "absolute",
-    left: "600px",
-    top: "700px",
+    left: "800px",
+    top: "525px",
   },
   two: {
     position: "absolute",
-    left: "1175px",
-    top: "825px",
+    left: "1000px",
+    top: "350px",
   },
   three: {
     position: "absolute",
-    left: "350px",
-    top: "550px",
+    left: "200px",
+    top: "450px",
   },
   four: {
     position: "absolute",
-    left: "725px",
-    top: "1150px",
+    left: "925px",
+    top: "725px",
   },
   five: {
     position: "absolute",
-    left: "300px",
-    top: "900px",
+    left: "500px",
+    top: "600px",
   },
   six: {
     position: "absolute",
-    left: "925px",
-    top: "1100px",
+    left: "1150px",
+    top: "600px",
   },
 });
 
@@ -76,7 +76,7 @@ export default function ViperBind() {
         style={classes.one}
         icon={Orbicon}
         imgID={
-          "https://drive.google.com/uc?export=view&id=10pcdRALM4HzeQJMwztfPp5HpKOG2aEmR"
+          "https://drive.google.com/uc?export=view&id=1XBNAcR0perqsR6isKOsi2TNojBx3maCa"
         }
       />
       <ButtonModal
@@ -85,7 +85,7 @@ export default function ViperBind() {
         style={classes.two}
         icon={Orbicon}
         imgID={
-          "https://drive.google.com/uc?export=view&id=11VK0IGcXpWTViJKyulxscKSx9_I4PIRl"
+          "https://drive.google.com/uc?export=view&id=1Z9CKjzn_vQeU39rufD3p_h_T3w_dbk0f"
         }
       />
       <ButtonModal
@@ -94,7 +94,7 @@ export default function ViperBind() {
         style={classes.three}
         icon={Orbicon}
         imgID={
-          "https://drive.google.com/uc?export=view&id=13WoD9ZCHskUfUkOK5fA4QsNXTLBs_BP_"
+          "https://drive.google.com/uc?export=view&id=16mjcy7IxehaeqV7RHe7kfx6Dnskc0KHH"
         }
       />
       <ButtonModal
@@ -103,7 +103,7 @@ export default function ViperBind() {
         style={classes.four}
         icon={Wallicon}
         imgID={
-          "https://drive.google.com/uc?export=view&id=1pTuWVov9SwKfqOALYbqmmyJW0EhrIdZE"
+          "https://drive.google.com/uc?export=view&id=1Rily5pvAF52hRKWAchYdqZalL67pXgKX"
         }
       />
       <ButtonModal
@@ -112,7 +112,7 @@ export default function ViperBind() {
         style={classes.five}
         icon={Wallicon}
         imgID={
-          "https://drive.google.com/uc?export=view&id=1RirZf0y0VTcytDbQffjSAw7RC_PbW36y"
+          "https://drive.google.com/uc?export=view&id=1G2P2RVb5dEifp_UGILL_7lKFANiMobIn"
         }
       />
       <ButtonModal
@@ -121,7 +121,7 @@ export default function ViperBind() {
         style={classes.six}
         icon={Wallicon}
         imgID={
-          "https://drive.google.com/uc?export=view&id=1Wqje7pZv0tMh1UoWC6EuXFCAwvyLtlfZ"
+          "https://drive.google.com/uc?export=view&id=1WYFzoOCcZZN366B0hDhBDdooxTynoSXE"
         }
       />
     </div>
