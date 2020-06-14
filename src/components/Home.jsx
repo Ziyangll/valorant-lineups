@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <div className={classes.main}>
       <Card className={classes.root}>
-        <CardActionArea onClick={() => history.push("/cypher")}>
+        <CardActionArea onClick={() => history.push("/cypher/ascent")}>
           <CardMedia
             component='img'
             color='grey'
@@ -57,7 +57,7 @@ export default function Home() {
         </CardActions>
       </Card>
       <Card className={classes.root}>
-        <CardActionArea onClick={() => history.push("/sova")}>
+        <CardActionArea onClick={() => history.push("/sova/ascent")}>
           <CardMedia
             component='img'
             alt='sova'
@@ -87,7 +87,7 @@ export default function Home() {
         </CardActions>
       </Card>
       <Card className={classes.root}>
-        <CardActionArea onClick={() => history.push("/viper")}>
+        <CardActionArea onClick={() => history.push("/viper/ascent")}>
           <CardMedia
             component='img'
             alt='viper'
