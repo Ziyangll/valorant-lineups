@@ -27,8 +27,8 @@ const useStyles = makeStyles({
   },
   one: {
     position: "absolute",
-    left: "725px",
-    top: "1100px",
+    left: "600px",
+    top: "700px",
   },
   two: {
     position: "absolute",
@@ -47,8 +47,8 @@ const useStyles = makeStyles({
   },
   five: {
     position: "absolute",
-    left: "725px",
-    top: "1100px",
+    left: "300px",
+    top: "900px",
   },
   six: {
     position: "absolute",
@@ -92,9 +92,9 @@ export default function ViperSplit() {
         open={open3}
         setOpen={setOpen3}
         style={classes.three}
-        icon={Wallicon}
+        icon={Orbicon}
         imgID={
-          "https://drive.google.com/uc?export=view&id=1eBO0JQmomCPH0lJ791FAmvJAL6zKI2bC"
+          "https://drive.google.com/uc?export=view&id=13WoD9ZCHskUfUkOK5fA4QsNXTLBs_BP_"
         }
       />
       <ButtonModal
@@ -110,9 +110,9 @@ export default function ViperSplit() {
         open={open5}
         setOpen={setOpen5}
         style={classes.five}
-        icon={Orbicon}
+        icon={Wallicon}
         imgID={
-          "https://drive.google.com/uc?export=view&id=1_L5aLY7wWhchjoOetd9awq3bQz1YETt8"
+          "https://drive.google.com/uc?export=view&id=1RirZf0y0VTcytDbQffjSAw7RC_PbW36y"
         }
       />
       <ButtonModal
