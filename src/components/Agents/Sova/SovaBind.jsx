@@ -7,38 +7,30 @@ const useStyles = makeStyles({
     width: "100%",
     backgroundColor: "#222",
   },
-  text: {
-    color: "#fff",
-  },
-  icon: {
-    width: "40px",
-    height: "40px",
-  },
-
-  image: {
-    position: "absolute",
-    width: "600px",
-    marginLeft: "auto",
-    marginRight: "auto",
-    left: "0",
-    right: "0",
-    top: "50%",
-    textAlign: "center",
-  },
   one: {
     position: "absolute",
-    left: "1010px",
-    top: "600px",
+    left: "870px",
+    top: "500px",
   },
   two: {
     position: "absolute",
-    left: "750px",
-    top: "660px",
+    left: "280px",
+    top: "440px",
   },
   three: {
     position: "absolute",
-    left: "230px",
-    top: "550px",
+    left: "360px",
+    top: "900px",
+  },
+  four: {
+    position: "absolute",
+    left: "490px",
+    top: "780px",
+  },
+  five: {
+    position: "absolute",
+    left: "760px",
+    top: "750px",
   },
 });
 
@@ -48,6 +40,8 @@ export default function SovaBind() {
   const [open, setOpen] = useState(false);
   const [open2, setOpen2] = useState(false);
   const [open3, setOpen3] = useState(false);
+  const [open4, setOpen4] = useState(false);
+  const [open5, setOpen5] = useState(false);
   return (
     <div className={classes.main}>
       <ButtonModal
@@ -55,21 +49,45 @@ export default function SovaBind() {
         setOpen={setOpen}
         style={classes.one}
         icon={icon}
-        imgID={"https://drive.google.com/uc?export=view&id="}
+        imgID={
+          "https://drive.google.com/uc?export=view&id=1wvM5N9HqcMbTMNC1IQ-H_efYyDPn3s5v"
+        }
       />
       <ButtonModal
         open={open2}
         setOpen={setOpen2}
         style={classes.two}
         icon={icon}
-        imgID={"https://drive.google.com/uc?export=view&id="}
+        imgID={
+          "https://drive.google.com/uc?export=view&id=1wQ0pzf5N-y_xIOQpik-YzrdZv6zz97SS"
+        }
       />
       <ButtonModal
         open={open3}
         setOpen={setOpen3}
         style={classes.three}
         icon={icon}
-        imgID={"https://drive.google.com/uc?export=view&id="}
+        imgID={
+          "https://drive.google.com/uc?export=view&id=1t1745VseOzQHPNTX2ZzNXruv8Y_ZU3t1"
+        }
+      />
+      <ButtonModal
+        open={open4}
+        setOpen={setOpen4}
+        style={classes.four}
+        icon={icon}
+        imgID={
+          "https://drive.google.com/uc?export=view&id=13BPeP-TwPodAf02v_Sgc4ZICb5R2bNED"
+        }
+      />
+      <ButtonModal
+        open={open5}
+        setOpen={setOpen5}
+        style={classes.five}
+        icon={icon}
+        imgID={
+          "https://drive.google.com/uc?export=view&id=1Qgz6p-LhcPJ5cKa1ykCjtwrpWaiLiz7l"
+        }
       />
     </div>
   );
