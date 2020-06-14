@@ -7,38 +7,35 @@ const useStyles = makeStyles({
     width: "100%",
     backgroundColor: "#222",
   },
-  text: {
-    color: "#fff",
-  },
-  icon: {
-    width: "40px",
-    height: "40px",
-  },
-
-  image: {
-    position: "absolute",
-    width: "600px",
-    marginLeft: "auto",
-    marginRight: "auto",
-    left: "0",
-    right: "0",
-    top: "50%",
-    textAlign: "center",
-  },
   one: {
     position: "absolute",
-    left: "1010px",
-    top: "600px",
+    left: "950px",
+    top: "360px",
   },
   two: {
     position: "absolute",
-    left: "750px",
-    top: "660px",
+    left: "200px",
+    top: "450px",
   },
   three: {
     position: "absolute",
-    left: "230px",
+    left: "460px",
     top: "550px",
+  },
+  four: {
+    position: "absolute",
+    left: "1220px",
+    top: "820px",
+  },
+  five: {
+    position: "absolute",
+    left: "370px",
+    top: "1000px",
+  },
+  six: {
+    position: "absolute",
+    left: "570px",
+    top: "910px",
   },
 });
 
@@ -48,6 +45,9 @@ export default function SovaSplit() {
   const [open, setOpen] = useState(false);
   const [open2, setOpen2] = useState(false);
   const [open3, setOpen3] = useState(false);
+  const [open4, setOpen4] = useState(false);
+  const [open5, setOpen5] = useState(false);
+  const [open6, setOpen6] = useState(false);
   return (
     <div className={classes.main}>
       <ButtonModal
@@ -55,21 +55,54 @@ export default function SovaSplit() {
         setOpen={setOpen}
         style={classes.one}
         icon={icon}
-        imgID={"https://drive.google.com/uc?export=view&id="}
+        imgID={
+          "https://drive.google.com/uc?export=view&id=11Xl5yjp_q717Ei6oHCDqWdXE0oLQkaN7"
+        }
       />
       <ButtonModal
         open={open2}
         setOpen={setOpen2}
         style={classes.two}
         icon={icon}
-        imgID={"https://drive.google.com/uc?export=view&id="}
+        imgID={
+          "https://drive.google.com/uc?export=view&id=1o7t4_AzIH1I7iEQFh6eLulJyKj70T03x"
+        }
       />
       <ButtonModal
         open={open3}
         setOpen={setOpen3}
         style={classes.three}
         icon={icon}
-        imgID={"https://drive.google.com/uc?export=view&id="}
+        imgID={
+          "https://drive.google.com/uc?export=view&id=1hPYe3uOPjzYHgAjzkIzNAwJhxq6VfY3u"
+        }
+      />
+      <ButtonModal
+        open={open4}
+        setOpen={setOpen4}
+        style={classes.four}
+        icon={icon}
+        imgID={
+          "https://drive.google.com/uc?export=view&id=140pUOCcx_ziybYMubJmWdTCGe5DOon8O"
+        }
+      />
+      <ButtonModal
+        open={open5}
+        setOpen={setOpen5}
+        style={classes.five}
+        icon={icon}
+        imgID={
+          "https://drive.google.com/uc?export=view&id=1kJuOJ32-9J1NLDyk8lRFEV_RuBvzpmd-"
+        }
+      />
+      <ButtonModal
+        open={open6}
+        setOpen={setOpen6}
+        style={classes.six}
+        icon={icon}
+        imgID={
+          "https://drive.google.com/uc?export=view&id=1R6fg6kzdjmwJrY8JuRpo3eIWNvbua_X2"
+        }
       />
     </div>
   );

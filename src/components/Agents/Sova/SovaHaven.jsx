@@ -7,13 +7,7 @@ const useStyles = makeStyles({
     width: "100%",
     backgroundColor: "#222",
   },
-  text: {
-    color: "#fff",
-  },
-  icon: {
-    width: "40px",
-    height: "40px",
-  },
+  
   one: {
     position: "absolute",
     left: "1250px",
