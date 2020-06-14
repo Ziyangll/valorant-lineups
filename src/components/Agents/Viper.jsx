@@ -6,6 +6,8 @@ import Haven from "../Maps/Haven";
 import Split from "../Maps/Split";
 import ViperAscent from "./Viper/ViperAscent";
 import ViperSplit from "./Viper/ViperSplit";
+import ViperHaven from "./Viper/ViperHaven";
+import ViperBind from "./Viper/ViperBind";
 const useStyles = makeStyles({
   main: {
     position: "absolute",
@@ -24,7 +26,9 @@ export default function Viper({ map }) {
       {map === "ascent" && <Ascent />}
       {map === "ascent" && <ViperAscent />}
       {map === "bind" && <Bind />}
+      {map === "bind" && <ViperBind />}
       {map === "haven" && <Haven />}
+      {map === "haven" && <ViperHaven />}
       {map === "split" && <Split />}
       {map === "split" && <ViperSplit />}
     </div>
